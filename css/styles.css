@@ -108,7 +108,7 @@ color: #04ff6d;
 .titulo__quote{
     font-family: 'Bree Serif', serif;
     letter-spacing: 5px;
-    margin: 80px 10px 20px 0px;
+    margin: 100px 10px 20px 0px;
     padding: 10px;
     font-size: 60px;
     text-shadow: 4px 3px 1px black;
@@ -124,8 +124,7 @@ color: #04ff6d;
     }
 
     100%{
-    opacity: 1;
-    transform: translateY(0px);
+        transform: translateY(0px);
     }
 }
 
@@ -161,13 +160,15 @@ color: #04ff6d;
 
 .titulo__parrafo{
     font-size: 30px;
+    letter-spacing: 2px;
     padding: 40px 30px 30px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     text-align: left;
     text-shadow: 2px 2px 1px black;
     background-color: rgba(0, 0, 0, .6);
     margin: 120px 0px 50px;
     grid-area: p;
+    font-weight: 900;
 }
 
 .aside img{
@@ -183,17 +184,22 @@ color: #04ff6d;
 }
 
 @keyframes aside {
+
     0%{
-        opacity: 0;
-    transform: rotate(30deg);
+        opacity: 0.5;
+        transform: rotate(30deg);
     }
+
 
     25%{
         transform: rotate(-45deg);
     }
+
+
     50%{
-    transform: rotate(20deg);
+        transform: rotate(20deg);
     }
+
 
     60%{
         transform: scale(1.1);
@@ -215,6 +221,7 @@ color: #04ff6d;
 .frutas{
     position: absolute;
     top: 170px;
+    right:-25px;
 }
 
 .crew{
@@ -397,6 +404,7 @@ font-size: 14px;
     animation-duration: 3s;
     border-radius: 4%;
     margin-bottom: 200px;
+    transition: .4s;
 }
 
 .opening_button:hover{
