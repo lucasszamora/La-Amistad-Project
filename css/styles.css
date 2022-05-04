@@ -1,3 +1,8 @@
+
+
+            /* ESTILOS GENERALES BASE DE LAS PÁGINAS */
+
+
 *{
     margin: 0;
     padding: 0;
@@ -19,9 +24,10 @@
 .logo{
     height: 60px;
     margin: 0px 25px;
+    animation: nav 2s;
 }
 
-a{
+li a{
     text-decoration: none;
     color: white;
 }
@@ -39,12 +45,13 @@ a{
 
 
 .burger{  
-    display: none;
+    display: none !important;
 }
 
 .nav__links li{
     display: inline-block;
     margin: 20px 30px;
+    animation: nav 2s;
 }
 
 
@@ -60,6 +67,44 @@ color: #04ff6d;
     list-style: none;
 }
 
+.footer{
+    background-color: rgba(0, 0, 0, 0.95);
+    font-size: 23px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes-container a{
+    text-decoration: none;
+  display: inline-flex;
+  padding: 0px 10px;
+  font-size: 20px;
+}
+
+.redes-container a:hover{
+  transition: .4s;
+  text-shadow: 0px 0px 2.5px;
+  font-size: 25px;
+}
+
+@keyframes nav{
+    
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+
+}
+
+                    /* INDEX . HTML ESTILOS */
+
+
+
+
+
 .titulo__quote{
     font-family: 'Bree Serif', serif;
     letter-spacing: 5px;
@@ -68,7 +113,22 @@ color: #04ff6d;
     font-size: 60px;
     text-shadow: 4px 3px 1px black;
     text-align: center;
+    grid-area: h1;
+    animation: titulo 5s;
 }
+
+@keyframes titulo {
+    0%{
+        opacity: 0;
+        transform: translateY(90px);
+    }
+
+    100%{
+    opacity: 1;
+    transform: translateY(0px);
+    }
+}
+
 
 
 .somos{
@@ -77,6 +137,16 @@ color: #04ff6d;
     text-align: center;
     align-items: center;
 }
+
+.titulo{
+    display: grid;
+    grid-template-areas: 
+    "h1 h1 aside aside"
+    "h1 h1 aside aside"
+    "h1 h1 aside aside"
+    " p p p p";
+}
+
 
 
 .titulo__laamistad{
@@ -91,35 +161,67 @@ color: #04ff6d;
 
 .titulo__parrafo{
     font-size: 30px;
-    padding: 20px 30px 30px;
+    padding: 40px 30px 30px;
     font-family: 'Montserrat', sans-serif;
     text-align: left;
     text-shadow: 2px 2px 1px black;
-    background-color: rgba(0, 0, 0, .5);
-    margin: 30px 0px 20px;
+    background-color: rgba(0, 0, 0, .6);
+    margin: 120px 0px 50px;
+    grid-area: p;
 }
 
-.footer{
-    background-color: rgba(0, 0, 0, 0.95);
-    font-size: 23px;
-    display: flex;
-    justify-content: space-between;
+.aside img{
+    width: 210px;
+    height: 210px;
+    grid-area: aside;
+    margin: 90px 50px 20px 0px;
+    border-radius: 60%;
+    outline: 11px double #008939;
+    transition: .4s;
+    animation-name: aside;
+    animation-duration: 3.5s;
 }
 
-.redes-container a{
-  display: inline-flex;
-  padding: 0px 10px;
-  font-size: 20px;
+@keyframes aside {
+    0%{
+        opacity: 0;
+    transform: rotate(30deg);
+    }
+
+    25%{
+        transform: rotate(-45deg);
+    }
+    50%{
+    transform: rotate(20deg);
+    }
+
+    60%{
+        transform: scale(1.1);
+        }
+
+    100%{
+        transform: scale(1);
+    }
 }
 
-.redes-container a:hover{
-  transition: .4s;
-  text-shadow: 0px 0px 2.5px;
-  font-size: 25px;
+
+.aside img:hover{
+    border-radius: 0%;
+    outline: 4px solid #000;
+    transition: .4s;
+    transform: scale(1.1);
 }
 
+.frutas{
+    position: absolute;
+    top: 170px;
+}
 
-
+.crew{
+    position: absolute;
+    top: 320px;
+    right: 230px;
+}
 
                         /* QUIENES SOMOS . html  ESTILOS*/
 
@@ -276,14 +378,17 @@ font-size: 14px;
     animation-duration: 1s;
 }
 
+.opening_button a{
+    text-decoration: none;
+}
+
 .opening_button{
     letter-spacing: 5px;
     text-align: center;
     font-size: 20px;
     height: 50px;
     width: 300px;
-    color: #ffffff;
-    background-color: #008939;
+    background-color: #000;
     cursor: pointer;
     text-shadow: 2px 2px 1px #000;
     border: 1px 1px 5px rgb(176, 176, 176);
@@ -295,10 +400,11 @@ font-size: 14px;
 }
 
 .opening_button:hover{
-    background-color: #01b74c;
+    background-color: #008939;
     text-shadow: none;
     box-shadow: 0px 3px 3px rgb(176, 176, 176);
-    transition: .2s;
+    border-style: none;
+    transition: .4s;
 }
 
 .opening_container{
@@ -416,7 +522,7 @@ font-size: 14px;
     }
 
     .burger{
-        display: flex;
+        display: flex !important;
         padding: 15px;
         font-size: 30px;
     }
