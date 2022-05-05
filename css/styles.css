@@ -886,5 +886,13 @@ font-size: 20px;
 margin: 0 10px;
 }
 
+.offices, .offices_title, .offices_text{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0px;
+    margin: 0;
+    padding: 0;
+}
 }
                                                             
