@@ -108,15 +108,20 @@ color: #04ff6d;
 .titulo__quote{
     font-family: 'Bree Serif', serif;
     letter-spacing: 5px;
-    margin: 100px 10px 20px 0px;
+    margin: 100px 470px 20px 0px;
     padding: 10px;
-    font-size: 60px;
+    font-size: 50px;
     text-shadow: 4px 3px 1px black;
     text-align: center;
     grid-area: h1;
-    animation: titulo 5s;
+    animation: titulo 3s;
+    transition: .3s;
 }
 
+.titulo__quote:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
 @keyframes titulo {
     0%{
         opacity: 0;
@@ -149,7 +154,7 @@ color: #04ff6d;
 
 
 .titulo__laamistad{
-    width: 700px;
+    width: 600px;
     margin-left: 40px;
 
 }
@@ -159,18 +164,60 @@ color: #04ff6d;
 }
 
 .titulo__parrafo{
-    font-size: 30px;
+    font-size: 40px;
     letter-spacing: 2px;
     padding: 40px 30px 30px;
     font-family: 'Quicksand', sans-serif;
-    text-align: left;
+    text-align: center;
     text-shadow: 2px 2px 1px black;
     background-color: rgba(0, 0, 0, .6);
-    margin: 120px 0px 50px;
+    margin: 220px 0px 50px;
     grid-area: p;
     font-weight: 900;
 }
 
+.buttondown a{
+    text-decoration: none;
+}
+
+.buttondown{
+    display: inline;
+    position: absolute;
+    width: 30%;
+    top: 570px;
+    left: 190px;
+    height: 8%;
+    background-color: #000;
+    border: 2px solid #fff;
+    font-size: 30px;
+    transition: .3s;
+    cursor: pointer;
+    border-radius: 20px;
+    animation: button 6s;
+}
+
+@keyframes button {
+    0%{
+        opacity: 0;
+        transform: translateY(90px);
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+}
+
+
+.buttondown:hover{
+    transition: .3s;
+    background-color: #008939;
+}
 .aside img{
     width: 210px;
     height: 210px;
@@ -220,14 +267,20 @@ color: #04ff6d;
 
 .frutas{
     position: absolute;
-    top: 170px;
-    right:-25px;
+    top: 160px;
+    right:0px;
 }
 
 .crew{
     position: absolute;
     top: 320px;
     right: 230px;
+}
+
+.jura1{
+    position: absolute;
+    top: 20px;
+    right: 240px;
 }
 
                         /* QUIENES SOMOS . html  ESTILOS*/
