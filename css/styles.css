@@ -1,6 +1,9 @@
 
 
-            /* ESTILOS GENERALES BASE DE LAS PÁGINAS */
+
+
+
+                                                        /* ESTILOS GENERALES BASE DE LAS PÁGINAS */
 
 
 *{
@@ -10,6 +13,11 @@
     color: white;
     scroll-behavior: smooth;
 }
+
+#check{
+display: none;
+}
+
 
 .index-container{
     background: radial-gradient(circle, rgba(1,73,31,1) 0%, rgba(0,0,0,1) 99%);
@@ -33,19 +41,21 @@ li a{
 }
 
 .header {
-    padding: 5px 0px;
     margin: -20px 0px;
     display: flex;
     justify-content: space-between;
     font-family: 'Montserrat', sans-serif;
     text-shadow: 1px 1px 5px rgb(176, 176, 176);
-    z-index: 1000000;
-    overflow: hidden;
+    width: 100%;
 }
 
 
 .burger{  
     display: none !important;
+}
+
+.active{
+    color: #ffd102;
 }
 
 .nav__links li{
@@ -99,7 +109,7 @@ color: #04ff6d;
 
 }
 
-                    /* INDEX . HTML ESTILOS */
+                                                            /* INDEX . HTML ESTILOS */
 
 
 
@@ -283,7 +293,7 @@ color: #04ff6d;
     right: 240px;
 }
 
-                        /* QUIENES SOMOS . html  ESTILOS*/
+                                                       /* QUIENES SOMOS . html  ESTILOS*/
 
 
 
@@ -318,7 +328,7 @@ color: #04ff6d;
 
 
 
-                        /* SUCURSALES . html  ESTILOS*/
+                                                    /* SUCURSALES . html  ESTILOS*/
 
 
 
@@ -561,62 +571,12 @@ font-size: 14px;
     justify-self: center;
 }
 
-@media screen and (max-width: 769px) {
 
-    .header{
-        flex-direction: row;
-    }
 
-    .titulo__quote{
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .titulo__laamistad{
-        width: 300px;
-        margin: -10px;
-        padding: 0;
-    }
-
-    .nav{
-    display: none;
-    }
-
-    .burger{
-        display: flex !important;
-        padding: 15px;
-        font-size: 30px;
-    }
-
-    .footer{
-    margin: 0;
-    }
-
-    .footer__srl{
-        font-size: 15px;
-        padding: 10px;
-    }
-
-    .icon{
-        flex-direction: row;
-        margin: -20px 0;
-    }
-
-    .titulo__laamistad,.titulo__quote{
-        display: none;
-    }    
-
-    .titulo__parrafo{
-        font-size: 18px;
-        margin-bottom: 0;
-        text-align: center;
-    }
-
-}
+                                                                  /* TRABAJA CON NOSOTROS . html  ESTILOS */
 
 
 
-                        /* TRABAJA CON NOSOTROS . html  ESTILOS */
 
 .work-with-us-body {
     margin-top: 20px;
@@ -679,7 +639,7 @@ input{
 
 
 
-                        /* TIENDA ONLINE . html ESTILOS */
+                                                                  /* TIENDA ONLINE . html ESTILOS */
 
 
 
@@ -771,3 +731,94 @@ padding: 40px;
     margin-top: 100px;
     font-weight: 900;
 }
+                                                            /* VERSION MOBILE */
+
+
+@media screen and (max-width: 769px) {
+
+
+                                                            /*   ESTILOS GENERALES    */
+
+
+.header{
+    flex-direction: row;
+}
+
+.burger{
+    display: flex !important;
+    animation: nav 2s;
+    padding: 15px;
+    font-size: 34px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+                                                            
+.nav{
+ position: fixed;
+ width: 0%;
+ height: 100%;
+ top: 100px;
+ background: rgba(0, 0, 0, 0.95);
+ text-align: center;
+ transition: .5s;   
+}
+                                                            
+.nav li{
+    display: none;
+    line-height: 40px;
+    margin: 50px 0;
+    transition: .5s;
+}
+                                                            
+.active{
+color: #04ff6d;
+text-shadow: none;
+}
+                                                            
+#check:checked ~ nav{
+    width: 100%;
+    z-index: 9999;
+}
+
+#check:checked ~ nav li{
+    display: block;
+    }
+        
+.footer{
+margin: 0;
+}
+
+.footer__srl{
+    font-size: 15px;
+    padding: 10px;
+}
+
+.icon{
+    flex-direction: row;
+    margin: -20px 0;
+}
+
+                                    /* INDEX . HTML */
+.titulo__quote{
+    font-size: 20px;
+    text-align: center;
+}
+                                                            
+.titulo__laamistad{
+    width: 300px;
+    margin: -10px;
+    padding: 0;
+}
+
+.titulo__laamistad,.titulo__quote,.frutas,.jura1,.crew, .buttondown{
+    display: none;
+}
+
+.titulo__parrafo{
+    font-size: 18px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+}
+                                                            
