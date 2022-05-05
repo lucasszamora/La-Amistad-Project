@@ -739,6 +739,10 @@ padding: 40px;
 
                                                             /*   ESTILOS GENERALES    */
 
+*{
+ padding: 0;
+ margin: 0;
+}
 
 .header{
     flex-direction: row;
@@ -747,9 +751,9 @@ padding: 40px;
 .burger{
     display: flex !important;
     animation: nav 2s;
-    padding: 15px;
+    margin: 0.5em auto;
+    padding: 0 15px;
     font-size: 34px;
-    margin-right: 20px;
     cursor: pointer;
 }
                                                             
@@ -785,7 +789,8 @@ text-shadow: none;
     }
         
 .footer{
-margin: 0;
+margin: 40px auto 0px;
+padding: 10px 1em;
 }
 
 .footer__srl{
@@ -846,6 +851,39 @@ margin: 0;
     margin-top: 20%;
     margin-bottom: 5px;
     text-align: center;
+}
+
+                                            /*      SUCURSALES . HTML      */
+
+.offices_container{
+    grid-template-areas: 
+    "h1"
+    "div1"
+    "div2"
+    "div3"
+    "div4"
+    "div5"
+    "div6"
+    "div7"
+    "div8"
+    "div9"
+    "div10"
+    "div11"
+    "div12"
+    ;
+}
+.offices_img--cover,.offices_title,.offices_text,.offices_img,.sucu-container{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.offices_container{
+    padding: 0 30px;
+}
+.opening_text{
+font-size: 20px;
+margin: 0 10px;
 }
 
 }
