@@ -589,11 +589,9 @@ font-size: 14px;
 
 
 .form-container{
-    /* margin-top: 200px; */
-    color: #000000;
+    margin: 200px 50px;
+    background-color: rgba(100, 100, 100, 0.8);
     text-align: center;
-    border-style: 2px solid;
-    border-color: white;
 }
 
 .work-with-us-button{
@@ -669,10 +667,26 @@ input{
 .products{
     height: 300px;
     width: 300px;
+    transition: .4s;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid #ffffff;
+    margin: 10px 30px;
 }
 
-.online-shop-h1, .frutas-container, .verduras-container{
-    margin: 50px;
+.products:hover{
+    transform: scale(1.04);
+    transition: .4s;
+    border-radius: 40px;
+}
+
+.frutas-container, .verduras-container{
+    margin: 150px auto;
+    text-align: center;
+}
+.onlineshoptitle{
+    overflow: hidden;
+    margin: 0 auto -150px;
     text-align: center;
 }
 
@@ -680,13 +694,6 @@ input{
 letter-spacing: 4px;
 background-color: rgba(76, 81, 76, 0.3);
 padding: 40px;
-}
-
-.products{
-    margin: 10px 30px;
-    border-width: 10px;
-    border-color: #ffffff;
-    border-style: solid;
 }
 
 .product-title{
@@ -698,11 +705,11 @@ padding: 40px;
 }
 
 .online-shop-title{
-    font-size: 80px;
-    letter-spacing: 90px;
+    font-size: 70px;
+    letter-spacing: 30px;
     padding-bottom: 30px;
     text-align: center;
-    text-shadow: 2px 2px 6px rgb(163, 218, 53);
+    text-shadow: 0px 3px 6px rgb(163, 218, 53);
 }
 
 .cart-button{
@@ -711,33 +718,65 @@ padding: 40px;
     border-color: rgb(12, 146, 10);
     padding: 7px 4px ;
     margin-top: 15px;
-    color: #161111;
+    color: #000;
     font-weight: 900;
     cursor: pointer;
+    transition: .3s;
 }
 
 .cart-button:hover{
     transition: .3s;
-    background-color: #fff;
-    color: #000;
+    background-color: rgb(12, 146, 10);
+    color: #fff;
     border-color: rgb(163, 218, 53);
 }
 
 .online-shop-h1{
-    font-family: 'Quicksand';
-    letter-spacing: 3px;
+    font-family: 'Montserrat', sans-serif;
     font-size: 80px;
-    text-shadow: 2px 2px 3px;
-    margin-top: 100px;
+    text-shadow: 2px 2px 3px #04ff6d;
+    margin: 200px auto;
     font-weight: 900;
+    animation: eshop 6s;
+    animation-iteration-count: infinite ;
+    overflow: hidden;
 }
+
+@keyframes eshop {
+    0%{
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+
+    25%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    50%{
+        transform: translateX(300px);
+        opacity: 0;
+    }
+
+    75%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    
+}
+
+
+
                                                             /* VERSION MOBILE */
 
 
 @media screen and (max-width: 769px) {
 
 
-                                                            /*   ESTILOS GENERALES    */
+                                                            /*   ESTILOS GENERALES MOBILE  */
 
 *{
  padding: 0;
@@ -803,7 +842,7 @@ padding: 10px 1em;
     margin: -20px 0;
 }
 
-                                    /* INDEX . HTML */
+                                                        /* INDEX . HTML   MOBILE  */
 .titulo__quote{
     font-size: 20px;
     text-align: center;
@@ -821,7 +860,7 @@ padding: 10px 1em;
 
 .titulo__laamistad{
     font-size: 30px;
-    margin-top: 30px 0px;
+    margin: 30px 0px;
     height: 100%;
     width: 100%;
     text-align: center;
@@ -853,7 +892,7 @@ padding: 10px 1em;
     text-align: center;
 }
 
-                                            /*      SUCURSALES . HTML      */
+                                                  /*      SUCURSALES . HTML  MOBILE   */
 
 .offices_container{
     grid-template-areas: 
@@ -882,8 +921,8 @@ padding: 10px 1em;
     padding: 0 30px;
 }
 .opening_text{
-font-size: 20px;
-margin: 0 10px;
+    font-size: 20px;
+    margin: 0 10px;
 }
 
 .offices, .offices_title, .offices_text{
@@ -894,5 +933,55 @@ margin: 0 10px;
     margin: 0;
     padding: 0;
 }
+
+
+                                                            /* TIENDA ONLINE . HTML  MOBILE  */
+
+.onlineshoptitle{
+    margin: 3px;
 }
-                                                            
+
+.online-shop-h1{
+    animation: none;
+    font-size: 40px;
+}
+
+.online-shop-title{
+    font-size: 30px;
+    margin: 20px -30px;
+    letter-spacing: 3px;    
+}
+
+.frutas-container,.verduras-container{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.products{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 0;
+    object-fit: cover;
+}
+
+.products:hover{
+    transform: none;
+    border-radius: 0;
+}
+
+.product-description{
+    font-size: 15px;
+}
+
+.product-title{
+    font-size: 30px;
+}
+
+.cart-button{
+    font-size: 10px;
+    margin: 15px auto;
+}
+
+}
