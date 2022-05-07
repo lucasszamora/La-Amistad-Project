@@ -37,30 +37,35 @@
         <h1 class="form-h1">ESTÁS A UN PASO DE VIVIR LA EXPERIENCIA LA AMISTAD</h1>
         <form action="#">
             <div class="name">
-                <label for="nombre">Nombre completo: </label>
-                <input type="text" name="nombre" placeholder="Ingrese aquí su nombre completo.." required>    
+                <label class="input-title" for="nombre">Nombre completo:</label><br>
+                <input class="input" type="text" name="nombre" placeholder="Ingrese aquí su nombre completo.." required>    
             </div>
 
-            <div class="gender">
-                <label for="genero">Hombre:</label>
-                <input type="radio" name="genero" id="hombre">
-                <label for="genero">Mujer:</label>
-                <input type="radio" name="genero" id="mujer">
+            <div class="puesto">
+                <h2 class="input-title">¿A cuál de estos puestos estás aplicando?:</h2>
+                <label class="genero" for="genero">Cajero/a:</label>
+                <input class="radio" type="radio" name="genero" id="cajero">
+                <label class="genero" for="genero">Vendedor/a:</label>
+                <input class="radio" type="radio" name="genero" id="vendedor">
+                <label class="genero" for="genero">Repositor/a:</label>
+                <input class="radio" type="radio" name="genero" id="repositor">
+                <label class="genero" for="genero">Cadete/a:</label>
+                <input class="radio" type="radio" name="genero" id="cadete">
             </div>
 
             <div  class="adress">
-                <label for="adress">Localidad: </label>
-                <input type="text" name="adress" required placeholder="Ingrese su Localidad..">
+                <label class="input-title" for="adress">Localidad: </label><br>
+                <input class="input" type="text" name="adress" required placeholder="Ingrese su Localidad..">
             </div>
             
             <div class="cv">
-                <label for="cv">Adjunte CV: </label>
-                <input type="file" name="cv" id="cv" required>
+                <label class="input-title" for="cv">Adjunte CV: </label><br>
+                <input class="input-cv" type="file" name="cv" id="cv" required>
             </div>
 
             <div class="linkedin">
-                <label for="linkedin">Si lo prefieres, puedes dejarnos tu CV a través de tu página de Linkedin</label>
-                <input type="url" name="linkedin" id="linkedin">
+                <label class="input-title" for="linkedin">Si lo prefieres, puedes dejarnos tu CV a través de tu página de Linkedin</label>
+                <input class="input" type="url" name="linkedin" id="linkedin">
             </div>
 
                 <button class="work-with-us-button"> ENVIAR INFO </button>
