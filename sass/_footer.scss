@@ -1,0 +1,38 @@
+.footer{
+    background-color: rgba(0, 0, 0, 0.95);
+    font-size: 23px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes-container a{
+    text-decoration: none;
+  display: inline-flex;
+  padding: 0px 10px;
+  font-size: 20px;
+}
+
+.redes-container a:hover{
+  transition: .4s;
+  text-shadow: 0px 0px 2.5px;
+  font-size: 25px;
+}
+
+@media screen and (max-widht: 769px) {
+
+.footer{
+margin: 40px auto 0px;
+padding: 10px 1em;
+
+  &__srl{
+    font-size: 15px;
+    padding: 10px;
+}
+}
+
+.icon{
+    flex-direction: row;
+    margin: -20px 0;
+}
+
+}
