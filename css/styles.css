@@ -12,6 +12,7 @@
     box-sizing: border-box;
     color: white;
     scroll-behavior: smooth;
+    text-decoration: none;
 }
 
 #check{
@@ -34,12 +35,7 @@ display: none;
     height: 60px;
     margin: 0px 25px;
     animation: nav 2s;
-}
-
-li a{
-    text-decoration: none;
-    color: white;
-}
+} 
 
 .header {
     margin: -20px 0px;
@@ -300,7 +296,7 @@ color: #04ff6d;
 
 
 .quienes-somos-section{
-    margin: 80px 30px;
+    margin: 100px 100px;
 }
 
 .nuestra_historia{
@@ -308,12 +304,15 @@ color: #04ff6d;
     letter-spacing: 10px;
     font-family: 'Bree Serif', serif;
     text-shadow: 4px 3px 1px black;
-    font-size: 90px;
+    font-size: 110px;
+    margin: 60px auto;
     }
 
     .parrafo-nuestrahistoria{
         font-family: 'Quicksand', sans-serif;
-        font-size: 30px;
+        font-size: 40px;
+        text-shadow: 0px 2px 2px;
+        text-align: justify;
     }
 
     .who-we-are-container{
@@ -593,22 +592,28 @@ font-size: 14px;
     margin: 200px 50px;
     background-color: rgba(100, 100, 100, 0.8);
     text-align: center;
+    border-radius: 30px;
 }
 
 .work-with-us-button{
     background-color: rgb(163, 218, 53);
     color: #fff;
-    font-size: 20px;
+    font-size: 40px;
     text-shadow: 1px 3px 3px #000;
     font-family: 'Montserrat',sans-serif;
-    border-radius: 10%;
+    border-radius: 30px;
     margin: 20px;
     border-color: rgb(127, 164, 55);
     border-style: solid;
     border-width: 5px;
-    width: 160px;
-    height: 60px;
+    width: 560px;
+    height: 80px;
     cursor: pointer;
+    transition: .3s;
+}
+.work-with-us-button:hover{
+    background-color: #000;
+    transition: .3s;
 }
 
 .form-h1{
@@ -619,20 +624,17 @@ font-size: 14px;
 
 .input-title{
     font-family: 'Quicksand';
-    padding: 20px;
-    font-size: 35px;
+    padding: 30px;
+    font-size: 40px;
     text-align: left;
     font-weight: 900;
+    margin-bottom: 50px;
 }
 
 .puesto{
     text-align: center;
 }
 
-.input-title{
-margin-bottom: 50px;
-font-size: 30px;
-}
 .radio{
     width: 70px;
     height: 20px;
@@ -649,11 +651,14 @@ font-size: 30px;
     margin: 50px 30px;
 }
 
-.genero{
+.position{
     font-family: 'Quicksand', sans-serif;
     font-size: 30px;
     margin: 20px 0px 20px;
 }
+
+
+
                                                                   /* TIENDA ONLINE . html ESTILOS */
 
 
@@ -804,7 +809,7 @@ padding: 40px;
     flex-direction: row;
 }
 
-.burger{
+.header__burger{
     display: flex !important;
     animation: nav 2s;
     margin: 0.5em auto;
@@ -1000,5 +1005,94 @@ padding: 10px 1em;
     font-size: 10px;
     margin: 15px auto;
 }
+
+
+                                        /* TRABAJA CON NOSOTROS . HTML MOBILE  */
+                                        
+.form-container{
+    margin: 10px;
+    background-color: rgba(100, 100, 100, 0.8);
+    text-align: center;
+    border-radius: 3px;
+}
+
+.work-with-us-button{
+    background-color: rgb(163, 218, 53);
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 1px 3px 3px #000;
+    font-family: 'Montserrat',sans-serif;
+    border-radius: 50px;
+    border-color: rgb(127, 164, 55);
+    border-style: solid;
+    border-width: 3px;
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.form-h1{
+    font-family: 'Montserrat';
+    font-size: 25px;
+}
+
+.input-title{
+    font-family: 'Quicksand';
+    font-size: 20px;
+    text-align: left;
+    font-weight: 900;
+}
+
+.puesto{
+    text-align: center;
+}
+
+.radio{
+    width: 10px;
+    margin: 3px;
+    padding: 10px;
+    height: 15px;
+    text-align: justify;
+}
+
+.input{
+    width: 80%;
+    height: 45px;
+    border-radius: 7px;
+    color: #000;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.position{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    margin: 10px 10px;
+}
+
+
+                                                    /*  QUIENES SOMOS . HTML MOBILE */
+
+
+.quienes-somos-section{
+    margin: 50px auto;
+}
+
+.nuestra_historia{
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: 'Bree Serif', serif;
+    text-shadow: 4px 3px 1px black;
+    font-size: 30px;
+    margin: 80px auto 20px;
+    }
+
+    .parrafo-nuestrahistoria{
+        font-family: 'Quicksand', sans-serif;
+        font-size: 18px;
+        margin: 30px 20px;
+        text-shadow: 0px 2px 2px;
+        text-align: center;
+    }
 
 }
