@@ -293,7 +293,16 @@
 
                                     //ESTILOS PÁGINA SUCURSALES . HTML
 
-                                                           
+                          
+.offices-body {
+    margin-top: 20px;
+    background: radial-gradient(circle, rgba(1,73,31,1) 0%, rgba(0,0,0,1) 99%);
+    background-blend-mode: soft-light;
+    background-position: 0px 0px;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
 .offices_container{
     display: grid;
     grid-template-areas: 
@@ -306,6 +315,7 @@
     gap: 3em;
     cursor: auto;
     background-color: rgba(0, 0, 0, 0.3);
+    }
 
     .offices_img{
     width: 370px;
@@ -313,16 +323,16 @@
     border-radius: 1%;
     border: 4px solid #000;
     outline: 6px double #0f0c00;
-    
-    &--cover{
+    }
+    .offices_img--cover{
     width: 370px;
     height: 250px;
     border-radius: 1%;
     border: 4px solid #000;
     outline: 6px double #0f0c00;
     object-fit: cover;
-        }
     }
+    
 
     .sucu-container{
     transition: .2s;
@@ -338,7 +348,7 @@
     z-index: 5;
     outline: 6px double #ffd102;
     }
-    
+}
     .offices_text{
     font-size: 14px;
     }
@@ -352,7 +362,6 @@
         letter-spacing: 5px;
         font-size: 25px;
         }
-    }
     }
 
 .offices{
@@ -473,14 +482,6 @@
     }
     }
 
-.offices-body {
-    margin-top: 20px;
-    background: radial-gradient(circle, rgba(1,73,31,1) 0%, rgba(0,0,0,1) 99%);
-    background-blend-mode: soft-light;
-    background-position: 0px 0px;
-    background-size: 100%;
-    background-attachment: fixed;
-}
 
 .div1{
     grid-area: div1;
@@ -530,9 +531,11 @@
     grid-area: div12;
     justify-self: center;
 }
-}
+
 
 @media screen and (max-width: 769px){
+    
+
     
 .offices_container{
     grid-template-areas: 
@@ -560,9 +563,16 @@
 .offices_container{
     padding: 0 30px;
 }
+
+.opening_button{
+margin-top: 50px;
+}
+
 .opening_text{
     font-size: 20px;
-    margin: 0 10px;
+    padding: 0px;
+    margin: 50px 10px 0;
+    z-index: 1;
 }
 
 .offices, .offices_title, .offices_text{
@@ -594,7 +604,7 @@
     background-color: rgba(100, 100, 100, 0.8);
     text-align: center;
     border-radius: 30px;
-
+}
     .work-with-us-button{
     background-color: rgb(163, 218, 53);
     color: #fff;
@@ -616,7 +626,7 @@
     transition: .3s;
     }
     }
-
+ 
     .form-h1{
     font-family: 'Montserrat';
     font-size: 60px;
@@ -657,7 +667,73 @@
     font-size: 30px;
     margin: 20px 0px 20px;
     }
+
+
+    @media screen and (max-width: 769px) {
+                                            
+    .form-container{
+    margin: 10px;
+    background-color: rgba(100, 100, 100, 0.8);
+    text-align: center;
+    border-radius: 3px;
+    }
+
+    .work-with-us-button{
+    background-color: rgb(163, 218, 53);
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 1px 3px 3px #000;
+    font-family: 'Montserrat',sans-serif;
+    border-radius: 50px;
+    border-color: rgb(127, 164, 55);
+    border-style: solid;
+    border-width: 3px;
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+    }
+
+    .form-h1{
+    font-family: 'Montserrat';
+    font-size: 25px;
+    }
+
+    .input-title{
+    font-family: 'Quicksand';
+    font-size: 20px;
+    text-align: left;
+    font-weight: 900;
+    }
+
+    .puesto{
+    text-align: center;
+    }
+
+    .radio{
+    width: 10px;
+    margin: 3px;
+    padding: 10px;
+    height: 15px;
+    text-align: justify;
+    }
+
+    .input{
+    width: 80%;
+    height: 45px;
+    border-radius: 7px;
+    color: #000;
+    padding-left: 10px;
+    font-size: 12px;
+    }
+
+    .position{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    margin: 10px 10px;
+    }
+
 }
+
 
                                     // ESTILOS PÁGINA TIENDA ONLINE . HTML
 
