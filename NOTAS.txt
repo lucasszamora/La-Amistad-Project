@@ -1,4 +1,0 @@
-SASS:
-NESTING (anidar conceptos , h1 y abajo tal)
-USAR SASS PARA VARIABLES Y PRIMERO( crear archivo sass y vriables)
-USAR LA TECLA & ( se usa para ya sabes, metodologia BEM)
